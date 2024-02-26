@@ -5,9 +5,9 @@ function comecar(){
 
 function show(nome){
     document.getElementById("nomePrint").textContent = nome;
-    var div = getElementById("selects-div");
+    var div = document.getElementById("selects-div");
     if(nome && nome.trim() !== ""){
-        div.style.display = "block"
+        div.style.display = "flex"
         document.getElementById("exampleFormControlInput1").style.background = "none";
     }else{
         document.getElementById("error").style.display = "flex"
@@ -16,5 +16,5 @@ function show(nome){
 
 function fechar(){
     document.getElementById("error").style.display = "none";
-    document.getElementById("exampleFormControlInput1").style.background = "lightpink"
+    document.getElementById("exampleFormControlInput1").style.background = "lightpink";
 }

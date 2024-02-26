@@ -15,9 +15,9 @@
 </head>
 <body>
     <div id="error" class="error-modal">
-        <p>Insira</p>
+        <p>Informe seu nome</p>
         <br>
-        <button class="error-btn" onclick="fechar()">Entendi!!!</button>
+        <button class="error-btn" onclick="fechar()">OK</button>
     </div>
     <div class="btn-group" role="group" aria-label="Basic example">
         <button onclick="window.location.href='../Menu/page.html'" type="button" class="btn btn-primary">Menu</button>
@@ -31,7 +31,36 @@
       </div>
     <button type="button" class="btn btn-outline-success" onclick="comecar()">Começar</button>
     <div id="selects-div">
-        <h2>Olá <span id="nomePrint">, escolha</span></h2>
+        <h2>Olá <span id="nomePrint">, faça seu pedido</span></h2>
+        <h3>Pratos</h3>
+        <select class="form-select" aria-label="Default select example" id="selectPrato">
+            <option selected>Selecione um prato</option>
+            <option value="quiche">Quiche de espinafre e bacon</option>
+            <option value="bife">Bife com demi-glace</option>
+            <option value="tomate">Tomate genovês fresco e mini salada</option>
+        </select>
+        <h3>Bebidas</h3>
+        <select class="form-select" aria-label="Default select example" id="selectBebida">
+            <option selected>Selecione uma bebida</option>
+            <option value="sangria">Sangria</option>
+            <option value="shirley-temple">Shirley Temple</option>
+            <option value="refresco">Refresco de verão esmeralda</option>
+        </select>
+        <h3>Sobremesas</h3>
+        <select class="form-select" aria-label="Default select example" id="selectSobremesa">
+            <option selected>Selecione uma sobremesa</option>
+            <option value="mimosa">Parfait de mimosa cítrica da primavera</option>
+            <option value="panqueca">Panqueca de frutas</option>
+            <option value="pretty5">Parfait Pretty 5</option>
+        </select>
+        <div>
+            <button class="btn btn-success" type="button" onclick="calcularTotal()">Fazer pedido</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="limpar()">Limpar</button>
+        </div>
+        <div>
+            <span class="badge bg-primary">Total:</span>
+            <span class="badge bg-secondary" id="resultado"></span>
+        </div>
     </div>
 </body>
 </html>

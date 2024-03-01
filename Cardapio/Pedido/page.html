@@ -57,9 +57,22 @@
             <button class="btn btn-success" type="button" onclick="calcularTotal()">Fazer pedido</button>
             <button class="btn btn-outline-secondary" type="button" onclick="limpar()">Limpar</button>
         </div>
-        <div>
-            <span class="badge bg-primary">Total:</span>
-            <span class="badge bg-secondary" id="resultado"></span>
+        <div class="totalDiv" id="total">
+            <div>
+                <span class="badge bg-primary">Total:</span>
+                <span class="badge bg-secondary" id="resultado"></span>
+            </div>
+            <br>
+            <div>
+                <p>Prato:</p>
+                <p id="prato-pronto"></p>
+                <br>
+                <p>Bebida:</p>
+                <p id="bebida-pronto"></p>
+                <br>
+                <p>Sobremesa:</p>
+                <p id="sobremesa-pronto"></p>
+            </div>
         </div>
     </div>
 </body>
